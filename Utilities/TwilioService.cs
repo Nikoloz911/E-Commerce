@@ -44,11 +44,11 @@ internal class TwilioService
             string smsBody = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(smsBody))
             {
-                var accountSid = "accountSid Is Private";
-                var authToken = "AuthToken Is Private";
+                var accountSid = "accountSid Is Private"; ///
+                var authToken = "AuthToken Is Private"; ///
                 TwilioClient.Init(accountSid, authToken);
-                var messageOptions = new CreateMessageOptions(new PhoneNumber("My Phone Number"));
-                messageOptions.From = new PhoneNumber("Twilio Phone Number");
+                var messageOptions = new CreateMessageOptions(new PhoneNumber("My Phone Number")); ///
+                messageOptions.From = new PhoneNumber("Twilio Phone Number"); ///
                 messageOptions.Body = smsBody;
                 var message = MessageResource.Create(messageOptions);
                 Console.Clear();         
