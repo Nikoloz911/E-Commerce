@@ -12,7 +12,7 @@ internal class SMTPService
     public static void EmailSender(string ToAddress, string verificationCode)
     {
         string senderEmail = "nikalobjanidze014@gmail.com";
-        string appPassword = "This App Password is Private"; ///
+        string appPassword = "njpo pwxn puhn weox"; ///
         string htmlContent = $@"
 <!DOCTYPE html>
 <html lang='en'>
@@ -60,7 +60,7 @@ internal class SMTPService
     public static void SendUpdateNotification(string toAddress, string updateType, string updatedValue)
     {
         string senderEmail = "nikalobjanidze014@gmail.com";
-        string appPassword = "This App Password is Private"; ///
+        string appPassword = "njpo pwxn puhn weox"; ///
         string ipAddress = Dns.GetHostAddresses(Dns.GetHostName())
                                  .FirstOrDefault()?.ToString() ?? "Unknown IP";
         string htmlContent = $@"
@@ -110,7 +110,7 @@ internal class SMTPService
     public void SendInvoiceWithAttachment(string toAddress, string updateType, string updatedValue, string invoiceFilePath)
     {
         string senderEmail = "nikalobjanidze014@gmail.com"; 
-        string appPassword = "This App Password is Private";  ///
+        string appPassword = "njpo pwxn puhn weox";  ///
         string htmlContent = $@"
             <html>
                 <head>
