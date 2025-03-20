@@ -20,13 +20,11 @@ using BCrypt.Net;
 DataContext _context = new DataContext();
 List<Custumer> Custumers = _context.Custumers.ToList();
 List<CustumerDetails> CustumerDetails = _context.CustumerDetails.ToList();
-//Dictionary<string, string> encryptedData = new Dictionary<string, string>();
 // DeleteData(_context);
 InitializeCategories(_context);
 InitializeProducts(_context);
 string logFileName = "shop_system_log.txt";
-// damatebuli kategoria ar chans analitikashi
-// validacia saxelze
+
 if (!File.Exists(logFileName))
 {
     using (StreamWriter writer = new StreamWriter(logFileName))
